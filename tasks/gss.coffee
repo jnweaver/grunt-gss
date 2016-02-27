@@ -67,7 +67,7 @@ module.exports = (grunt) ->
     server.maxConnections = 1
     server.listen 4477 # ggss
 
-  rxFileIdAndGid = /^.*[\/\=](\w{44}).*gid=(\d+).*$/i
+  rxFileIdAndGid = /^.*[\/\=]([-?\w]{44}).*gid=(\d+).*$/i
   rxTrue = /^true$/i
   grunt.registerMultiTask 'gss', ->
 
